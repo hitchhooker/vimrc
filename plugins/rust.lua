@@ -1,4 +1,11 @@
 return {
+  -- replace rust-tools with rustaceanvim
+  --   {
+  --   'mrcjkb/rustaceanvim',
+  --   version = '^4', -- Recommended
+  --   ft = { 'rust' },
+  -- }
+  --
   {
     "simrat39/rust-tools.nvim",
     lazy = true,
