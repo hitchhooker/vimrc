@@ -10,12 +10,17 @@ return {
   --   "BufReadPre path/to/my-vault/**.md",
   --   "BufNewFile path/to/my-vault/**.md",
   -- },
+  --
+
   dependencies = {
     -- Required.
     "nvim-lua/plenary.nvim",
     -- see below for full list of optional dependencies 👇
   },
   opts = {
+    -- See https://github.com/epwalsh/obsidian.nvim/issues/286 for more details.
+    -- conceallevel = 1,
+
     workspaces = {
       {
         name = "rotko",
