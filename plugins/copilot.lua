@@ -26,4 +26,5 @@ return {
       end, 100)
     end,
   },
+  { "AndreM222/copilot-lualine" },
 }
