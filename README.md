@@ -18,3 +18,8 @@ rm -rf ~/.config/nvim/.git
 mv ~/.config/nvim/lua/ ~/.config/nvim/lua.bak
 git clone git@github.com:hitchhooker/vimrc  ~/.config/nvim/lua
 ```
+## resources
+- [lazyvim docs](https://lazyvim.org)
+- [neovim](https://neovim.io/)
+- [copilot.lua](https://github.com/zbirenbaum/copilot.lua)
+- [obsidian.nvim](https://github.com/epwalsh/obsidian.nvim)
