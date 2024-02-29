@@ -22,4 +22,5 @@ git clone git@github.com:hitchhooker/vimrc  ~/.config/nvim/lua
 - [lazyvim docs](https://lazyvim.org)
 - [neovim](https://neovim.io/)
 - [copilot.lua](https://github.com/zbirenbaum/copilot.lua)
+  - To login `:Copilot auth`
 - [obsidian.nvim](https://github.com/epwalsh/obsidian.nvim)
