@@ -11,10 +11,12 @@ vim.api.nvim_set_keymap("n", "<C-w>", ":bd<CR>", { noremap = true, silent = true
 -- Open a new empty buffer with Ctrl-n (or choose your preferred keybinding)
 vim.api.nvim_set_keymap("n", "<C-n>", ":enew<CR>", { noremap = true, silent = true })
 
+-- this requires xclip installed
 -- Copy text to clipboard
 vim.api.nvim_set_keymap("n", "<C-S-c>", '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<C-S-c>", '"+y', { noremap = true, silent = true })
 
+-- this requires xclip installed
 -- Paste text from clipboard
 vim.api.nvim_set_keymap("n", "<C-S-v>", '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<C-S-v>", "<C-R>+", { noremap = true, silent = true })

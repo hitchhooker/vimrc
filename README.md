@@ -1,4 +1,5 @@
 # nvim configs
+![image](https://github.com/hitchhooker/vimrc/assets/15621959/19301f72-c183-427c-be6b-35a8419f334c)
 
 my custom lazyvim configs
 ```bash
