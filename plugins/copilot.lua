@@ -2,7 +2,7 @@ return {
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
-    event = "VimEnter",
+    event = "VeryLazy",
     config = function()
       vim.defer_fn(function()
         require("copilot").setup({

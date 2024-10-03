@@ -18,3 +18,6 @@ vim.api.nvim_set_keymap("v", "<C-S-c>", '"+y', { noremap = true, silent = true }
 -- Paste text from clipboard
 vim.api.nvim_set_keymap("n", "<C-S-v>", '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<C-S-v>", "<C-R>+", { noremap = true, silent = true })
+
+-- Wrap current line
+vim.keymap.set("n", "<leader>w", "gqq", { noremap = true, silent = true, desc = "Wrap current line" })

@@ -3,6 +3,13 @@
 -- Add any additional options here
 vim.opt.conceallevel = 1
 
+-- lines
+vim.opt.textwidth = 100  -- Set to your desired line length
+vim.opt.colorcolumn = "100"  -- Highlight the 80th column
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.breakindent = true
+
 return {
   {
     "folke/which-key.nvim",
