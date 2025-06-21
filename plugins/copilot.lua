@@ -1,3 +1,6 @@
+-- -- In copilot.lua
+return {}
+-- commented out
 -- return {
 --   {
 --     "zbirenbaum/copilot.lua",
