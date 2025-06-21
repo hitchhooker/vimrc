@@ -8,18 +8,21 @@ if vim.bo.commentstring == "" or vim.bo.commentstring == nil then
   vim.bo.commentstring = "# %s"
 end
 
-return {
-  {
-    "folke/which-key.nvim",
-    event = "VeryLazy",
-    init = function()
-      vim.o.timeout = true
-      vim.o.timeoutlen = 300
-    end,
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    },
-  },
-}
+-- lines
+vim.opt.textwidth = 100  -- Set to your desired line length
+vim.opt.colorcolumn = "100"  -- Highlight the 80th column
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.breakindent = true
+
+-- Disable animations and smooth scrolling
+vim.opt.smoothscroll = false
+vim.opt.lazyredraw = true
+
+-- Disable cursor animations if using Neovide
+vim.g.neovide_cursor_animation_length = 0
+vim.g.neovide_scroll_animation_length = 0
+
+-- Force immediate cursor movement
+vim.opt.scrolloff = 0
+vim.opt.sidescrolloff = 0
