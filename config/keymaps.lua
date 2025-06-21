@@ -2,24 +2,16 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- Cycle through buffers with Ctrl-Tab and Ctrl-Shift-Tab
-vim.api.nvim_set_keymap("n", "<C-Tab>", ":bnext<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-S-Tab>", ":bprev<CR>", { noremap = true, silent = true })
+-- Buffer navigation
+vim.keymap.set("n", "<C-Tab>", ":bnext<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-S-Tab>", ":bprev<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-w>", ":bd<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-n>", ":enew<CR>", { noremap = true, silent = true })
 
--- Close the current buffer with Ctrl-w
-vim.api.nvim_set_keymap("n", "<C-w>", ":bd<CR>", { noremap = true, silent = true })
--- Open a new empty buffer with Ctrl-n (or choose your preferred keybinding)
-vim.api.nvim_set_keymap("n", "<C-n>", ":enew<CR>", { noremap = true, silent = true })
-
--- this requires xclip installed
--- Copy text to clipboard
-vim.api.nvim_set_keymap("n", "<C-S-c>", '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "<C-S-c>", '"+y', { noremap = true, silent = true })
-
--- this requires xclip installed
--- Paste text from clipboard
-vim.api.nvim_set_keymap("n", "<C-S-v>", '"+p', { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "<C-S-v>", "<C-R>+", { noremap = true, silent = true })
+-- Clipboard operations (requires xclip)
+vim.keymap.set({ "n", "v" }, "<C-S-c>", '"+y', { noremap = true, silent = true })
+vim.keymap.set("n", "<C-S-v>", '"+p', { noremap = true, silent = true })
+vim.keymap.set("i", "<C-S-v>", "<C-R>+", { noremap = true, silent = true })
 
 -- Wrap current line
 vim.keymap.set("n", "<leader>w", "gqq", { noremap = true, silent = true, desc = "Wrap current line" })
